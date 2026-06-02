@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Leads | Growth Dashboard",
-  description: "Lead management and tracking",
+  title: "Settings | Growth Dashboard",
+  description: "Application settings",
 };
 
-export default function LeadsLayout({
+export default function SettingsLayout({
   children,
 }: {
   children: React.ReactNode;

@@ -1,15 +1,14 @@
-import Sidebar from "@/src/components/Sidebar";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Campaigns | Growth Dashboard",
+  description: "Campaign management and tracking",
+};
 
 export default function CampaignsLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <div className="flex">
-      <Sidebar />
-
-      <main className="flex-1 p-10 bg-gray-100 min-h-screen">{children}</main>
-    </div>
-  );
+  return <>{children}</>;
 }
